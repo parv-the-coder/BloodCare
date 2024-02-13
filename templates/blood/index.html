@@ -1,0 +1,331 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- CSS Files -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'css/main2.css' %}" rel="stylesheet">
+
+  <!-- JS Files -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.sticky.js' %}"></script>
+  <script src="{% static 'js/click-scroll.js' %}"></script>
+  <script src="{% static 'js/counter.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</head>
+
+<body>
+  {% include "blood/navbar.html" %}
+  <!-- Hero Section -->
+  <section class="hero-section hero-section-full-height">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-12 p-0">
+          <!-- Hero Carousel -->
+          <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <img src="{% static 'images/slide/slide1.jpg' %}" class="carousel-image img-fluid" alt="...">
+                <div class="carousel-caption d-flex flex-column justify-content-end" style="color: #800000">
+                  <h1>Donate blood</h1>
+                  <p>Share a little, care a little </p>
+                </div>
+              </div>
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <img src="{% static 'images/slide/slide2.jpg' %}" class="carousel-image img-fluid" alt="...">
+                <div class="carousel-caption d-flex flex-column justify-content-end">
+                  <h2 style="color: #800000;">Every
+                    drop counts </h2>
+                  <p>give blood, give life</p>
+                </div>
+              </div>
+              <!-- Third Slide -->
+              <div class="carousel-item">
+                <img src="{% static 'images/slide/slide3.jpg' %}" class="carousel-image img-fluid" alt="...">
+                <div class="carousel-caption d-flex flex-column justify-content-end" style="color: #800000">
+                  <h1>Blood donation</h1>
+                  <p>the ultimate act of kindness.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-10 col-12 text-center mx-auto">
+          <!-- Section Title -->
+          <h2 class="mb-5" style="color: #800000; font-size: 50px;">Welcome to BloodCare</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Featured Blocks -->
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+          <div class="featured-block d-flex justify-content-center align-items-center">
+            <a href="/donor/donorlogin" class="d-block">
+              <img src="{% static 'images/icons/hands.png' %}" class="featured-block-image img-fluid" alt="">
+              <!-- Block Text -->
+              <p class="featured-block-text">Become a <strong>Donor</strong></p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+          <div class="featured-block d-flex justify-content-center align-items-center">
+            <a href="/donor/donorlogin" class="d-block">
+              <img src="{% static 'images/icons/heart.png' %}" class="featured-block-image img-fluid" alt="">
+              <!-- Block Text -->
+              <p class="featured-block-text"><strong>Caring</strong> Earth</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+          <div class="featured-block d-flex justify-content-center align-items-center">
+            <a href="/donor/donorlogin" class="d-block">
+              <img src="{% static 'images/icons/receive.png' %}" class="featured-block-image img-fluid" alt="">
+              <!-- Block Text -->
+              <p class="featured-block-text">Make a <strong>Donation</strong></p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding section-bg" id="section_2" style="background-color: rgba(255, 0, 0, 0.05);">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+          <!-- Image Column -->
+          <img src="{% static 'images/group-photo.jpg' %}" class="custom-text-box-image img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 col-12">
+          <div class="row">
+
+            <div class="col-lg-12 col-md-6 col-12">
+              <!-- Custom Text Box - Our Story -->
+              <div class="custom-text-box" style="height: 100%;">
+                <h2 class="mb-2" style="color: rgb(215, 33, 33); font-weight: bold;">Our Story</h2>
+                <h5 class="mb-3" style="color: #800000">BloodCare, Saving Lives drop by drop</h5>
+                <p class="mb-0">Founded in 2023 with a Vision for Healthier Communities.
+                  BloodCare was born out of a collective vision to make a tangible difference in the lives of people in
+                  need.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-6 col-12" style="padding-top: 50px;">
+              <!-- Custom Text Box - Our Mission -->
+              <div class="custom-text-box d-flex flex-column" style="height: 100%;">
+                <h2 class="mb-3" style="color: rgb(215, 33, 33); font-weight: bold;">Our Mission</h2>
+                <p>To ensure a steady and reliable blood supply for hospitals and medical facilities across our region.
+                </p>
+                <!-- Custom List -->
+                <ul class="custom-list mt-2">
+                  <li class="custom-list-item d-flex">
+                    <i class="bi-check custom-text-box-icon me-2"></i>
+                    Real-Time Blood Availability Updates
+                  </li>
+                  <li class="custom-list-item d-flex">
+                    <i class="bi-check custom-text-box-icon me-2"></i>
+                    Responsive Support Team
+                  </li>
+                  <li class="custom-list-item d-flex">
+                    <i class="bi-check custom-text-box-icon me-2"></i>
+                    User-Friendly Interface
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" id="section_3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12 text-center mb-4">
+          <!-- Section Title -->
+          <h2 style="color: #800000">Our Causes</h2>
+        </div>
+
+        <!-- First Cause -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <div class="custom-block-wrap">
+            <!-- Image -->
+            <img src="{% static 'images/causes/awarness.jpg' %}" class="custom-block-image img-fluid" alt="">
+
+            <div class="custom-block">
+              <div class="custom-block-body">
+                <!-- Cause Title -->
+                <h5 class="mb-3" style="color: rgb(215, 33, 33); font-weight: bold;">Promoting Blood Donation</h5>
+                <!-- Cause Description -->
+                <p>Raise awareness about the importance of regular blood donation to maintain an adequate blood supply
+                  for medical
+                  emergencies and surgeries.
+                </p>
+                <div class="d-flex align-items-center my-2">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Second Cause -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+          <div class="custom-block-wrap">
+            <!-- Image -->
+            <img src="{% static 'images/causes/bloodsupply2.jpg' %}" class="custom-block-image img-fluid" alt="">
+
+            <div class="custom-block">
+              <div class="custom-block-body">
+                <!-- Cause Title -->
+                <h5 class="mb-3" style="color: rgb(215, 33, 33); font-weight: bold;">Ensuring Blood Supply</h5>
+                <!-- Cause Description -->
+                <p>Support initiatives to ensure a consistent and sufficient blood supply to meet the needs of patients
+                  in hospitals and medical facilities.
+                </p>
+                <div class="d-flex align-items-center my-2">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Third Cause -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="custom-block-wrap">
+            <!-- Image -->
+            <img src="{% static 'images/causes/emergency.jpg' %}" class="custom-block-image img-fluid" alt="">
+
+            <div class="custom-block">
+              <div class="custom-block-body">
+                <!-- Cause Title -->
+                <h5 class="mb-3" style="color: rgb(215, 33, 33); font-weight: bold;">Emergency Response Preparedness
+                </h5>
+                <!-- Cause Description -->
+                <p>Advocate for emergency response preparedness by maintaining sufficient blood reserves to address
+                  unforeseen events such as natural disasters, accidents, or mass casualties.
+                </p>
+                <div class="d-flex align-items-center my-2">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section section-padding section-bg" style="background-color: rgba(255, 0, 0, 0.05);">
+    <div class="row">
+      <div class="col-lg-8 col-12 mx-auto">
+        <!-- Section Title -->
+        <h2 class="mb-lg-3" style="color: #800000">Happy Users</h2>
+
+        <!-- Testimonial Carousel -->
+        <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <h4 class="carousel-title">The platform's seamless process made it easy for me to donate blood and
+                  potentially save lives. Highly recommended!</h4>
+                <small class="carousel-name" style="background-color: rgba(139, 0, 0, 1);"><span
+                    class="carousel-name-title">Parv Shah</span></small>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h4 class="carousel-title">BloodCare's swift response in a critical moment saved a life. Grateful for
+                  their support.</h4>
+                <small class="carousel-name" style="background-color: rgba(139, 0, 0, 1);"><span
+                    class="carousel-name-title">Himja Sheth</span></small>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h4 class="carousel-title">BloodCare: Easy, prompt, hassle-free blood donation. Proud to contribute!
+                </h4>
+                <small class="carousel-name" style="background-color: rgba(139, 0, 0, 1);"><span
+                    class="carousel-name-title">Amar Singh</span></small>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h4 class="carousel-title">BloodCare's professionalism ensured my recovery with crucial blood
+                  transfusions. Highly commendable.</h4>
+                <small class="carousel-name" style="background-color: rgba(139, 0, 0, 1);"><span
+                    class="carousel-name-title">Soniya Patel</span></small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Indicators -->
+          <ol class="carousel-indicators"
+            style="position: relative;top: 1px; bottom: 0; margin-top: 0px; margin-bottom: 0px;">
+            <li data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active">
+              <img src="{% static 'images/avatar/1.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+            </li>
+
+            <li data-bs-target="#testimonial-carousel" data-bs-slide-to="1" class="">
+              <img src="{% static 'images/avatar/3.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+            </li>
+
+            <li data-bs-target="#testimonial-carousel" data-bs-slide-to="2" class="">
+              <img src="{% static 'images/avatar/4.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+            </li>
+
+            <li data-bs-target="#testimonial-carousel" data-bs-slide-to="3" class="">
+              <img src="{% static 'images/avatar/2.jpg' %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+            </li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "blood/footer.html" %}
+
+</body>
+
+</html>
