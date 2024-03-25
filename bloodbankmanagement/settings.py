@@ -37,7 +37,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CSRF_COOKIE_SECURE=False
+CSRF_TRUSTED_ORIGINS = ['https://bloodcare-production.up.railway.app']
 ROOT_URLCONF = 'bloodbankmanagement.urls'
 
 TEMPLATES = [
